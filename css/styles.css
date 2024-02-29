@@ -1253,3 +1253,13 @@ th:last-child {
 .login-form form p a {
   color: dodgerblue;
 }
+.carousel-inner{
+  height: 300px;
+  z-index: -1;
+}
+.logo{
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 15px;
+  
+}
