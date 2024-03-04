@@ -56,7 +56,7 @@ li {
 .header {
   position: relative;
   /* min-height: 100vh; */
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .top-nav {
