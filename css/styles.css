@@ -188,8 +188,41 @@ li {
 .mega-menu .column h3{
   color: red;
 }
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
+  .nav {
+    width: 100%; 
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* z-index: 1000;  */
+  }
 
+  .nav.active {
+    display: flex; 
+  }
+
+  .nav ul {
+    flex-direction: column; 
+    display: none;
+  }
+
+  .nav li {
+    margin: 10px 0;
+  }
+
+  .search {
+    margin: 20px 0; 
+  }
+}
 
 /* Icons */
 
