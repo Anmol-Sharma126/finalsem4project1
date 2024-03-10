@@ -18,27 +18,3 @@ quantityInputs.forEach(input => {
   input.addEventListener('input', updateCart);
 });
 updateCart();
-
-
-const saleEndDate = new Date('March 28, 2024 23:59:59').getTime();
-
-
-const timerInterval = setInterval(function() {
-
-    const now = new Date().getTime();
-
-
-    const distance = saleEndDate - now;
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    document.getElementById('timer').innerHTML = `Sale ends in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
-
-    if (distance < 0) {
-        clearInterval(timerInterval);
-        document.getElementById('timer').innerHTML = 'Sale has ended!';
-    }
-}, 1000);
