@@ -1438,3 +1438,17 @@ th:last-child {
 .login-form form p a {
   color: dodgerblue;
 }
+/* CSS for the "Remove" button */
+button.remove-button {
+  background-color: #3e4eb0;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.remove-button:hover {
+  background-color: #436ac0;
+}
